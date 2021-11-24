@@ -40,9 +40,8 @@ public class CoffeeShopServiceTest {
         prodList.add(prod5);
         prodList.add(prod6);
 
-        Double receipt = 0.00;
 
-        receipt = coffeeShopService.getReceipt(prodList);
+        Double receipt = coffeeShopService.getReceipt(prodList);
 
         DecimalFormat df = new DecimalFormat("####0.00");
         assertEquals(15.35, Double.valueOf(df.format(receipt)));
